@@ -1,0 +1,70 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar-container {
+  background-color: rgb(74, 73, 73);
+  color: white;
+  list-style: none;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+.navbar-nav .nav-link:hover {
+  color: grey;
+}
+
+.navbar-brand {
+  color: white;
+}
+.navbar-brand:hover {
+  color: grey;
+}
+
+#hero-section {
+  background-color: rgb(74, 73, 73);
+  color: white;
+}
+
+.footer-container {
+  margin-top: auto;
+}
+
+.container-abt-me-sec #abt-me-text {
+  text-size-adjust: 30px;
+  background-color: rgb(74, 73, 73);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+}
+
+.project-section {
+  margin: 15px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#word-display {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

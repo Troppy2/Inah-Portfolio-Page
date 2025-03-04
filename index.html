@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Inah Portfolio Page</title>
+
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- MDB CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Bootstrap JS (Bundle includes Popper.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- MDB JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="index.js"></script>
+</head>
+
+
+<body>
+  <!--Navigation bar-->
+  <div class="nav-bar-container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Profolio Page</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hero Section</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--Nav BAr-->
+  <!--Hero Section-->
+
+  <!-- Hero -->
+  <div class="p-5 text-center bg-body-tertiary" id="hero-section">
+    <h1>Welcome to My Portfolio Page</h1>
+    <h4 class="mb-3">This website will allow you to know more about me!</h4>
+    <a data-mdb-ripple-init class="btn btn-primary" onclick="setAt0()" id="btn-hero-section" role="button">Press to
+      Restart</a>
+  </div>
+  <!-- Hero -->
+
+  <!-- About Me Section -->
+  <div class="container-abt-me-sec">
+    <h1 style="
+          background-color: rgb(74, 73, 73);
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          text-align: center;
+        ">
+      About Me Section
+    </h1>
+    <p id="abt-me-text" onclick="display_info()">Click more to discover</p>
+  </div>
+  <br>
+
+  <!--Project section-->
+  <main class="project-section">
+    <div class="contianer-md-auto">
+      <div class="row">
+
+        <!--Card 1-->
+        <div class="col">
+          <div class="card shadow-lg hover-shadow">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="util_site.png" class="img-fluid" />
+              <a href="https://troppy2.github.io/Utilities/">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Utilities page</h5>
+              <p class="card-text">This page is a utilties page, you can access google websites and there is a mystery
+                page imbeded into the site.</p>
+              <a href="https://troppy2.github.io/Utilities/" class="btn btn-primary" data-mdb-ripple-init>Countinue</a>
+            </div>
+          </div>
+        </div>
+        <!--Card 1-->
+
+        <!--Card 2 week 5 assignment-->
+        <div class="col">
+          <div class="card shadow-lg hover-shadow">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="week_5_assignment_picture.png" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">week 5 assignment</h5>
+              <p class="card-text">This is a website with J-Query to add functionality to a website. </p>
+              <a href="https://troppy2.github.io/Week-5-Assignment/" class="btn btn-primary"
+                data-mdb-ripple-init>countinue</a>
+            </div>
+          </div>
+        </div>
+        <!--Card 2-->
+
+        <!--Card 3-->
+        <div class="col">
+          <div class="card shadow-lg hover-shadow">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="week_3_assignment_picture.png" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">week 3 assignment</h5>
+              <p class="card-text">This website explores SCSS; it is a framework for CSS that makes coding in CSS
+                easier. You can add variables and store them later to use them.</p>
+              <a href="https://troppy2.github.io/Button-Selector/" class="btn btn-primary"
+                data-mdb-ripple-init>countinue</a>
+            </div>
+          </div>
+        </div>
+        <!--Card 3-->
+      </div>
+    </div>
+    </div>
+  </main>
+  <!--PRJ Section-->
+
+<!--Model dilouge-->
+<!-- Add this button somewhere in your HTML, e.g., below the Hero Section -->
+<div class="d-flex justify-content-center my-4">
+  <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#staticBackdrop">
+    Open Random Word Generator
+  </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Random Word Generator</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p id="word-display">Click the button to generate a random word!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="generateRandomWord()">Generate Another Word</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--MODEL-->
+
+
+  <!--footer-->
+  <div class="footer-container">
+    <footer class="bg-body-tertiary text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05)">
+        © 2024 Copyright:
+        <a class="text-body">Troppy</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!--footer-->
+  </div>
+</body>
+
+</html>

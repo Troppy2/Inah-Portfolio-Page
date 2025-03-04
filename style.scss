@@ -1,0 +1,86 @@
+//Global styles
+$main-background-color: rgb(214, 211, 211);
+$hover-color: grey;
+$button-color: rgb(80, 146, 244);
+$background-dark: rgb(59, 59, 59);
+$background-light: rgb(214, 211, 211);
+$text-color: white;
+$global-font: Arial, Helvetica, sans-serif;
+$link-color: white;
+$link-hover-color: grey;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: $global-font;
+}
+
+//Navigation-section
+.nav-bar-container {
+  background-color: rgb(74, 73, 73);
+  color: $link-color;
+  list-style: none;
+}
+
+.navbar-nav .nav-link {
+  color: $link-color;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+.navbar-brand {
+  color: $link-color;
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+//Hero section
+#hero-section {
+  background-color: rgb(74, 73, 73);
+  color: white;
+}
+//footer 
+.footer-container {
+  margin-top: auto;
+}
+//Abt me styling
+.container-abt-me-sec {
+  #abt-me-text {
+    text-size-adjust: 30px;
+    background-color: rgb(74, 73, 73);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+  }
+}
+.project-section{
+  margin: 15px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+//ADD/ Remove as please 
+// Center the modal vertically and horizontally
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; // Ensure the modal is centered vertically
+}
+
+// Style the random word display
+#word-display {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
